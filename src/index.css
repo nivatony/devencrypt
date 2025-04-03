@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 30% 8%;
+    --foreground: 260 10% 90%;
+
+    --card: 260 20% 12%;
+    --card-foreground: 260 10% 90%;
+
+    --popover: 260 25% 10%;
+    --popover-foreground: 260 10% 90%;
+
+    --primary: 265 50% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 225 70% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 260 20% 15%;
+    --muted-foreground: 260 10% 60%;
+
+    --accent: 180 100% 45%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 20% 18%;
+    --input: 260 20% 18%;
+    --ring: 260 50% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 260 20% 10%;
+    --sidebar-foreground: 260 10% 90%;
+    --sidebar-primary: 265 50% 31%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 20% 15%;
+    --sidebar-accent-foreground: 260 10% 90%;
+    --sidebar-border: 260 20% 18%;
+    --sidebar-ring: 260 50% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .encryption-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary-foreground;
+  }
+  
+  .decryption-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/20 text-accent-foreground;
+  }
+}
