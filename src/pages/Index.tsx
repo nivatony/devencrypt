@@ -22,6 +22,7 @@ const Index = () => {
     }
   }, []);
 
+  
   const handleUserSelect = (id: string) => {
     setUserId(id);
     localStorage.setItem('secure-vault-user-id', id);
@@ -94,7 +95,8 @@ const Index = () => {
           </TabsContent>
         </Tabs>
       </div>
-      
+       
+
       <footer className="border-t border-border py-4 mt-auto">
         <div className="container max-w-5xl mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
